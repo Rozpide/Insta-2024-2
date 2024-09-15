@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-y: scroll;
+}
+
+#PaginaPrincipal {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#Navegador {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.TextoCabecera {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+#FotosContenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MarcoImagen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    border-top: 10px solid #ddd;
+    background-color: #fff;
+    border-bottom: 10px solid #ddd;
+    scroll-margin-top: #fff;
+}
+
+.CabeceraFoto {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.NombreFoto {
+    font-size: 14px;
+    color: #333;
+}
+
+.Fecha {
+    font-size: 12px;
+   
+    color: #666;
+}
+
+.ImagenContenedor {
+    width: 100%;
+    max-width: 600px;
+    /* Ajusta el ancho máximo de las imágenes */
+    height: 400px;
+    /* Ajusta la altura fija de las imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    /* Elimina los márgenes */
+}
+
+.ImagenContenedor img {
+    width: 100%;
+    height: 100%;
+    /* Ajusta la altura fija de las imágenes */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+.ComentarioContenedor {
+    width: 90%;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+.ComentarioPlaceholder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 2.5px 5px;
+    /* Tamaño más pequeño */
+    cursor: pointer;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    font-size: 12px;
+    /* Tamaño de fuente más pequeño */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
